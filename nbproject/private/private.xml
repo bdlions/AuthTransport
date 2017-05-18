@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="NetbeansProjects"/>
+        <group>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/test/ChannelImplementationTest.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/src/org/bdlions/transport/channel/provider/ChannelProviderImpl.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/src/org/bdlions/transport/processor/queue/QueueProcessorImpl.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/test/DatagramServer.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/src/org/bdlions/transport/packet/PacketImpl.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/test/DatagramClient.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/src/org/bdlions/transport/processor/packet/ClientPacketProcessor.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/src/org/bdlions/transport/channel/client/ClientChannelImpl.java</file>
+            <file>file:/C:/Users/alamgir/Documents/NetBeansProjects/AuthTransport/src/org/bdlions/transport/packet/analyzer/ClientDataPacketAnalyzer.java</file>
+        </group>
+    </open-files>
+</project-private>

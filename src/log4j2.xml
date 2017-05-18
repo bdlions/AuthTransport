@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <RollingFile name="TRANSPORT" fileName="logs/transport.log" filePattern="logs/transport-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>
+        <RollingFile name="CLIENT-CHANNEL" fileName="logs/client-channel.log" filePattern="logs/client-channel-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %C{1} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>     
+        <RollingFile name="RELAY-CHANNEL" fileName="logs/relay-channel.log" filePattern="logs/relay-channel-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %C{1} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>     
+        <RollingFile name="PACKET-PROCESSOR" fileName="logs/packet-processor.log" filePattern="logs/packet-processor-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %C{1} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>     
+        <RollingFile name="PACKET-ANALYZER" fileName="logs/packet-analyzer.log" filePattern="logs/packet-analyzer-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %C{1} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>     
+        <RollingFile name="PACKET-FACTORY" fileName="logs/packet-factory.log" filePattern="logs/packet-factory-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %C{1} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>     
+        <RollingFile name="CLIENT-PACKET-RECEIVER" fileName="logs/client-packet-receiver.log" filePattern="logs/client-packet-receiver-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %C{1} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile>     
+        <RollingFile name="CLIENT-PACKET-SENDER" fileName="logs/client-packet-sender.log" filePattern="logs/client-packet-sender-%d{MM-dd-yyyy}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %C{1} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile> 
+        <RollingFile name="REMOVER" 
+                     fileName="logs/remover.log" 
+                     filePattern="logs/remover-%d{yyyy-MM-dd}.log" 
+                     immediateFlush="true" >
+            <PatternLayout pattern="%d %-5p - %m%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>    
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-5p %d  Class name-%C Thread-[%t]  Method-%M() Message-%m%n"/>
+        </Console>
+    </Appenders>
+    <loggers>
+        <Logger name="org.bdlions.transport" level="debug">
+            <AppenderRef ref="TRANSPORT"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.channel.client" level="all">
+            <AppenderRef ref="CLIENT-CHANNEL"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.channel.relay" level="all">
+            <AppenderRef ref="RELAY-CHANNEL"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.processor" level="all">
+            <AppenderRef ref="PACKET-PROCESSOR"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.packet.analyzer" level="all">
+            <AppenderRef ref="PACKET-ANALYZER"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.factory" level="all">
+            <AppenderRef ref="PACKET-FACTORY"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.receiver" level="all">
+            <AppenderRef ref="CLIENT-PACKET-RECEIVER"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.packet" level="all">
+            <AppenderRef ref="CLIENT-PACKET-SENDER"/>
+        </Logger>  
+        <Logger name="org.bdlions.transport.remover" level="debug">
+            <AppenderRef ref="REMOVER"/>
+        </Logger>
+        <Logger name="org.bdlions.transport.remover" level="debug">
+            <AppenderRef ref="REMOVER"/>
+        </Logger>                                                          
+        <root level="all">
+            <appender-ref ref="STDOUT"/>
+        </root>
+    </loggers>
+</Configuration>
+

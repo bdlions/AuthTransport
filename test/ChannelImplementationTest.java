@@ -1,5 +1,5 @@
 
-import com.auction.dto.Credential;
+import com.bdlions.dto.Credential;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import org.bdlions.session.ISession;

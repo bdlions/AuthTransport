@@ -5,7 +5,7 @@
  */
 package org.bdlions.transport.packet.factory;
 
-import com.auction.util.REQUEST_TYPE;
+import com.bdlions.util.REQUEST_TYPE;
 import java.net.DatagramPacket;
 import java.util.concurrent.TimeUnit;
 //import org.bdlions.transport.packet.GenericPacket;

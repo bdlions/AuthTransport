@@ -5,8 +5,8 @@
  */
 package org.bdlions.transport.processor.packet;
 
-import com.auction.commons.ClientMessages;
-import com.auction.dto.response.ClientFailedResponse;
+import com.bdlions.commons.ClientMessages;
+import com.bdlions.dto.response.ClientFailedResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.net.DatagramPacket;

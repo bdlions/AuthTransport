@@ -5,8 +5,8 @@
  */
 package org.bdlions.transport.packet;
 
-import com.auction.util.ACTION;
-import com.auction.util.REQUEST_TYPE;
+import com.bdlions.util.ACTION;
+import com.bdlions.util.REQUEST_TYPE;
 
 /**
  *
